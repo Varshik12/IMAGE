@@ -12,7 +12,7 @@ export const AuthContext = createContext();
 // Example: const LIVE_BACKEND_URL = "https://softwallet-backend.onrender.com";
 // Agar ye khali ("") rahega, toh code apne aap "http://localhost:3000" par chalega.
 // ----------------------------------------------------------------------------------
-const LIVE_BACKEND_URL = ""; 
+const LIVE_BACKEND_URL = "https://image1-bezr.onrender.com"; 
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
