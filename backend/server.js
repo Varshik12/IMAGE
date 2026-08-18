@@ -103,8 +103,8 @@ const startFullStackServer = async () => {
     });
   }
 
-  // Bind the web server strictly to port 3000 (Required container port)
-  const activeSocketPort = 3000;
+  // Bind the web server to environment port or default to port 3000
+  const activeSocketPort = process.env.PORT || 3000;
   
   // Launch HTTP listening socket on port 3000
   expressApp.listen(activeSocketPort, "0.0.0.0", () => {
